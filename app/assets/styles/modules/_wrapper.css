@@ -1,0 +1,15 @@
+.wrapper {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@mixin atMedium {
+
+		&--t-margin {
+			margin-top: 2.5rem;
+		}
+	}
+}
