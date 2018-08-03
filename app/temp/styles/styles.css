@@ -641,9 +641,16 @@ a {
 	}
 
 @media (min-width: 800px) {
+
+		.portfolio-thumbnail--count {
+			-webkit-transform: translateX(0);
+			        transform: translateX(0);
+		}
+
 		.portfolio-thumbnail--count:nth-child(odd) {
-			-webkit-transform: translateY(65%);
-			        transform: translateY(65%);
+			-webkit-transform: translate(0, 65%);
+			        transform: translate(0, 65%);
+
 		}
 
 		.portfolio-thumbnail--count:nth-child(odd) .portfolio-thumbnail__title-container {
