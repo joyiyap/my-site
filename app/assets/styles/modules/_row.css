@@ -1,9 +1,11 @@
 .row {
 	@mixin clearfix;
 
-	& > div {
-		padding-left: 15px;
-		padding-right: 15px;
+	@mixin atSmall {
+		& > div {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 
 	@mixin atMedium {

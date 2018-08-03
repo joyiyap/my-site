@@ -13,10 +13,10 @@
 
 <body>
 	<header class="site-header">
-		<div class="wrapper wrapper--t-margin">
+		<div class="wrapper wrapper--t-margin wrapper--primary-nav">
 			<nav class="primary-nav primary-nav--pull-right">
 				<ul>
-					<li><a href="#">buzz me</a></li>
+					<li><a href="#contact" id="contact-link">buzz me</a></li>
 				</ul>
 			</nav>	
 		</div>
@@ -26,7 +26,7 @@
 		<div class="wrapper">
 			<div class="row">
 				<div class="row__medium-12">
-					<h1 id="test" class="intro__headline">HELLO<span class="intro__headline--small">&nbsp;WORLD</span></h1>
+					<h1 class="intro__headline">HELLO<span class="intro__headline--small">&nbsp;WORLD</span></h1>
 					<h2 class="intro__description">this is a <span class="intro__description--strikethrough">lazy</span> simple website to showcase my skills as a front-end web developer and some work i’ve done.<img class="intro__description__smiley" src="assets/images/smiley-small.gif" alt="smiley face"></h2>
 				</div>
 			</div>
@@ -39,7 +39,12 @@
 
 				<div class="row__medium-6 portfolio-thumbnail--count">
 					<div class="portfolio-thumbnail">
-						<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color.jpg" alt="beejooz">
+						<picture>
+							<source srcset="assets/images/beejooz-thumbnail-color-md.jpg" media="(min-width: 800px)">
+							<source srcset="assets/images/beejooz-thumbnail-color-sm.jpg" media="(min-width: 530px)">
+							<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color-xs.jpg" alt="beejooz">
+						</picture>
+						
 						<div class="portfolio-thumbnail__title-container">
 							<h3 class="portfolio-thumbnail__title">Beejooz</h3>
 							<h4 class="portfolio-thumbnail__subtitle">Lorem Ipsum</h4>
@@ -49,7 +54,12 @@
 
 				<div class="row__medium-6 portfolio-thumbnail--count">
 					<div class="portfolio-thumbnail">
-						<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color.jpg" alt="beejooz">
+						<picture>
+							<source srcset="assets/images/beejooz-thumbnail-color-md.jpg" media="(min-width: 800px)">
+							<source srcset="assets/images/beejooz-thumbnail-color-sm.jpg" media="(min-width: 530px)">
+							<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color-xs.jpg" alt="beejooz">
+						</picture>
+						
 						<div class="portfolio-thumbnail__title-container">
 							<h3 class="portfolio-thumbnail__title">Beejooz</h3>
 							<h4 class="portfolio-thumbnail__subtitle">Lorem Ipsum</h4>
@@ -59,17 +69,27 @@
 
 				<div class="row__medium-6 portfolio-thumbnail--count">
 					<div class="portfolio-thumbnail">
-						<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color.jpg" alt="beejooz">
+						<picture>
+							<source srcset="assets/images/beejooz-thumbnail-color-md.jpg" media="(min-width: 800px)">
+							<source srcset="assets/images/beejooz-thumbnail-color-sm.jpg" media="(min-width: 530px)">
+							<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color-xs.jpg" alt="beejooz">
+						</picture>
+						
 						<div class="portfolio-thumbnail__title-container">
 							<h3 class="portfolio-thumbnail__title">Beejooz</h3>
 							<h4 class="portfolio-thumbnail__subtitle">Lorem Ipsum</h4>
 						</div>
 					</div>
 				</div>
-
+				
 				<div class="row__medium-6 portfolio-thumbnail--count">
 					<div class="portfolio-thumbnail">
-						<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color.jpg" alt="beejooz">
+						<picture>
+							<source srcset="assets/images/beejooz-thumbnail-color-md.jpg" media="(min-width: 800px)">
+							<source srcset="assets/images/beejooz-thumbnail-color-sm.jpg" media="(min-width: 530px)">
+							<img class="portfolio-thumbnail__image" src="assets/images/beejooz-thumbnail-color-xs.jpg" alt="beejooz">
+						</picture>
+						
 						<div class="portfolio-thumbnail__title-container">
 							<h3 class="portfolio-thumbnail__title">Beejooz</h3>
 							<h4 class="portfolio-thumbnail__subtitle">Lorem Ipsum</h4>
@@ -81,15 +101,19 @@
 		</div>
 	</div>
 
-	<div id="contact contact" class="page-section">
-		<div class="wrapper">
-			<div class="contact__container">
-				<h2 class="contact__title">CONTACT</h2>
-				<address>
-					<h3 class="contact__detail"><a href="mailto:joyiyap19@gmail.com">email</a></h3>
-					<h3 class="contact__detail"><a href="tel:+642108815311">mobile</a></h3>
-					<h3 class="contact__detail"><a href="assets/pdfs/cv.pdf" target="_blank">resume</a></h3>
-				</address>
+	<div id="contact" class="contact page-section page-section--no-t-padding-until-medium" data-match-link="contact-link">
+		<div class="wrapper wrapper--contact">
+			<div class="row">
+				<div class="row__medium-12">
+					<div class="contact__container">
+						<h2 class="contact__title">CONTACT</h2>
+						<address>
+							<h3 class="contact__detail"><a href="mailto:joyiyap19@gmail.com">email</a></h3>
+							<h3 class="contact__detail"><a href="tel:+642108815311">mobile</a></h3>
+							<h3 class="contact__detail"><a href="assets/pdfs/cv.pdf" target="_blank">resume</a></h3>
+						</address>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

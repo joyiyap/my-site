@@ -15,33 +15,84 @@
 	}
 
 	&__title {
-		font-size: 3.2rem;
+		font-size: 2.2rem;
 		background-color: $mainBlack;
 		margin: 1rem 0;
 		padding: 0 .4rem .7rem .4rem;
 	}
 
 	&__subtitle {
-		font-size: 1.5rem;
+		font-size: 1rem;
 		font-family: 'Arial', sans-serif;
 		margin: 1.4rem 0;
 	}
 
 	&__title-container {
 		position: absolute;
-    	top: 6rem;
+    	top: 5rem;
 	}
 
 	&--count {
-		margin-bottom: 15rem;
+		margin-bottom: 7rem;
+		transform: translateX(10%);
+	}
+
+	@mixin atMedium {
+		&__title {
+			font-size: 3.2rem;
+			background-color: $mainBlack;
+			margin: 1rem 0;
+			padding: 0 .4rem .7rem .4rem;
+		}
+
+		&__subtitle {
+			font-size: 1.5rem;
+			font-family: 'Arial', sans-serif;
+			margin: 1.4rem 0;
+		}
+
+		&__title-container {
+			position: absolute;
+	    	top: 6rem;
+		}
+
+		&--count {
+			margin-bottom: 15rem;
+		}
 	}
 
 	&--count:nth-child(odd) {
-		transform: translateY(65%);
+		transform: translateX(-10%);
 	}
 
 	&--count:nth-child(odd) &__title-container {
 		right: 0;
-		top: 12rem;
 	}
+
+	@mixin atSmall {
+
+		&--count:nth-child(odd) &__title-container {
+			right: 4rem;
+			left: unset;
+		}
+
+		&__title-container {
+			left: 4rem;
+		}
+	}
+
+	@mixin atMedium {
+		&--count:nth-child(odd) {
+			transform: translateY(65%);
+		}
+
+		&--count:nth-child(odd) &__title-container {
+			right: 0;
+			top: 12rem;
+			left: unset;
+		}
+
+		
+	}
+
 }
