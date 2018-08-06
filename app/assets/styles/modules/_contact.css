@@ -1,7 +1,14 @@
 .contact {
 
+	@mixin atSmall {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -18rem;
+	}
+
 	&__container {
-		float: right;
+		/*float: right;*/
 		text-align: right;
 	}
 
@@ -16,6 +23,11 @@
 
 		a {
 			text-decoration: none;
+
+		}
+
+		&:hover a {
+			text-decoration: underline;
 		}
 	}
 
@@ -29,10 +41,20 @@
 		&__detail {
 			font-size: 4rem;
 			margin: .5rem 0;
-
-		a {
-			text-decoration: none;
 		}
 	}
+
+	.glitchy {
+		height: 6rem;
+
+		& >* {
+			right: 0;
+		}
+	}
+
+	@mixin atMedium {
+		.glitchy {
+			height: 10rem;
+		}
 	}
 }

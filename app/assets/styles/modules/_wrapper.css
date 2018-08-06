@@ -7,6 +7,12 @@
 	overflow: hidden;
 
 	@mixin atMedium {
+		&--portfolio-thumbnail {
+			overflow: initial;
+		}
+	}
+
+	@mixin atMedium {
 
 		&--t-margin {
 			margin-top: 2.5rem
@@ -17,7 +23,4 @@
 		@mixin clearfix;
 	}
 
-	&--contact {
-		@mixin clearfix;
-	}
 }

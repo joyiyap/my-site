@@ -7,11 +7,13 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		transition: filter .3s ease-out;
+		transition: all .3s ease-out;
 
-		&:hover {
+		&--color {
 			filter: grayscale(40%);
+			transform: scale(.95);
 		}
+		
 	}
 
 	&__title {
@@ -19,6 +21,13 @@
 		background-color: $mainBlack;
 		margin: 1rem 0;
 		padding: 0 .4rem .7rem .4rem;
+		transition: all .3s ease-out;
+
+		&--is-active {
+			transform: scale(1.1);
+			animation: blink .05s alternate linear infinite;
+			color: #eaecff;
+		}
 	}
 
 	&__subtitle {
@@ -33,7 +42,7 @@
 	}
 
 	&--count {
-		margin-bottom: 7rem;
+		margin-bottom: 5rem;
 		transform: translateX(10%);
 	}
 
@@ -57,7 +66,7 @@
 		}
 
 		&--count {
-			margin-bottom: 15rem;
+			margin-bottom: 10rem;
 		}
 	}
 
@@ -88,13 +97,12 @@
 		}
 
 		&--count:nth-child(odd) {
-			transform: translate(0, 65%);
+			transform: translate(0, -60%);
 
 		}
 
 		&--count:nth-child(odd) &__title-container {
 			right: 0;
-			top: 12rem;
 			left: unset;
 		}
 

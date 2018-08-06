@@ -1,0 +1,40 @@
+.skills {
+
+	&__title {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	&__detail {
+		font-size: 3rem;
+		margin: .5rem 0;
+	}
+
+	@mixin atMedium {
+		margin-top: -6rem;
+	}
+
+	@mixin atMedium {
+
+		&__title {
+			font-size: 5rem;
+			margin-bottom: 1.5rem;
+		}
+
+		&__detail {
+			font-size: 4rem;
+			margin: .5rem 0;
+		}
+	}
+
+	.glitchy {
+		height: 6rem;
+
+	}
+
+	@mixin atMedium {
+		.glitchy {
+			height: 10rem;
+		}
+	}
+}

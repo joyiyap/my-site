@@ -14,4 +14,33 @@
 			padding-top: 12rem;
 		}
 	}
+
+	&--no-t-padding {
+		padding-top: 0;
+	}
+
+	&--no-b-padding {
+		padding-bottom: 0;
+	}
+
+	&--no-b-padding-before-medium {
+		padding-bottom: 0;
+	}
+
+	@mixin atMedium {
+		&--no-b-padding-before-medium {
+			padding-bottom: 12rem;
+		}
+	}
+
+	&--b-padding-only-medium {
+		padding: 0;
+	}
+
+	@mixin atMedium {
+		&--b-padding-only-medium {
+			padding-bottom: 12rem;
+		}
+	}
+
 }

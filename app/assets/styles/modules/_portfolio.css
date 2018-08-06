@@ -1,0 +1,57 @@
+.portfolio {
+
+	&__title {
+		font-size: 2rem;
+		margin: 3rem 0;
+	}
+
+	@mixin atSmall {
+		&__title {
+			font-size: 3rem;
+			margin: 3rem 0 4rem;
+		}
+	}
+
+	&__devices-screen {
+		margin: 0 auto;
+    	display: block;
+	}
+
+	@mixin atSmall {
+		&__info-container {
+			padding-left: 2rem;
+		}
+	}
+
+	&__description {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+
+	@mixin atSmall {
+		&__description {
+			font-size: 1.7rem;
+			line-height: 2.8rem;
+		}
+	}
+
+	&__tech-container {
+		text-align: right;
+		margin: 2rem 0 4rem;
+	}
+
+	&__tech {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	@mixin atSmall {
+		&__tech {
+			font-size: 2rem;
+		}
+	}
+
+	&__btn-live {
+		animation: blink .05s alternate linear infinite;
+	}
+}
